@@ -1,0 +1,65 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Timer Icon -->
+    <ImageView
+        android:id="@+id/timer_icon"
+        android:layout_width="237dp"
+        android:layout_height="268dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/timer_icon" />
+
+    <!-- Main Break Text -->
+    <TextView
+        android:id="@+id/break_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timer_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Take a Break."
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <!-- Subtext -->
+    <TextView
+        android:id="@+id/subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/break_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="You can come back in"
+        android:textSize="16sp"
+        android:textColor="#888888" />
+
+    <!-- Timer Text -->
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="59:11"
+        android:textSize="32sp"
+        android:textColor="#6A47FF"
+        android:textStyle="bold" />
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timer_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#000000"
+        android:text="Close App"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
